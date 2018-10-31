@@ -1,6 +1,0 @@
-<!--index.wxml-->
-<view class="container" style="background-image: url({{HOST}}upload/img/u/2018/06/19/IDKX.jpg)">
-  <view class="enter">
-    <navigator url="/pages/shop/index/index">进入</navigator>
-  </view>
-</view>

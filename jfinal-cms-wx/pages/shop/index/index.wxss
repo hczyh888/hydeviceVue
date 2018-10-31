@@ -1,0 +1,206 @@
+/* pages/shop/index/index.wxss */
+
+.ad-list {
+  width: 100%;
+  height: 400rpx;
+}
+
+.ad-list image {
+  width: 100%;
+}
+
+.product {
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 25rpx;
+}
+
+.product .product-list {
+  flex: 0 0 330rpx;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35rpx;
+  position: relative;
+}
+
+.product-list .img {
+  background-size: 280rpx auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 330rpx;
+  border: 1rpx solid #e0e0e0;
+  width: 100%;
+  border-radius: 10rpx;
+}
+
+.product-list .title {
+  margin-top: 5rpx;
+  width: 100%;
+  font-size: 10pt;
+  line-height: 35rpx;
+  color: #000;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.product-list .extra {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.product-list .extra .tag {
+  background-color: #ffd9e7;
+  padding: 3rpx 10rpx;
+  font-size: 8pt;
+  display: inline-block;
+  border-radius: 5rpx;
+  color: #993661;
+}
+
+.product-list .extra .price {
+  font-size: 11pt;
+  color: #eb77a8;
+  font-weight: 500;
+}
+
+.product-list .extra .marketprice {
+  font-size: 8pt;
+  color: #989898;
+  text-decoration: line-through;
+}
+
+.product-list .tag-label {
+  position: absolute;
+  left: 5rpx;
+  top: 10rpx;
+  font-size: 8pt;
+  color: #fff;
+  background-color: #eb77a8;
+  padding: 3rpx 10rpx;
+  border-radius: 20rpx;
+}
+
+.sale-tag {
+  padding: 0 20rpx;
+  justify-content: space-between;
+}
+
+.sale-tag .sale-count {
+  position: relative;
+  flex: 0 0 348rpx;
+  height: 200rpx;
+  padding-left: 40rpx;
+  box-sizing: border-box;
+  line-height: 200rpx;
+  font-weight: 500px;
+}
+
+.sale-tag .new {
+  position: relative;
+  flex: 0 0 347rpx;
+  height: 200rpx;
+  line-height: 200rpx;
+  padding-left: 40rpx;
+  box-sizing: border-box;
+  font-weight: 500px;
+}
+
+.sale-tag .conpon {
+  position: relative;
+  flex: 0 0 445rpx;
+  height: 250rpx;
+  margin-top: 10rpx;
+   box-sizing: border-box;
+}
+.sale-tag .conpon swiper{
+  height:250rpx;
+}
+.sale-tag .conpon swiper swiper-item{
+position: relative;
+padding-left:40rpx; 
+box-sizing: border-box;
+}
+.sale-tag .conpon .money{
+margin-top:50rpx;
+font-size: 15pt; 
+}
+.sale-tag .conpon .lastSpendMoney{
+  margin-top: 5rpx;
+font-size: 11pt; 
+color: #495060;
+}
+.sale-tag .conpon .period{
+font-size: 11pt; 
+color: #495060;
+}
+.sale-tag .conpon .lingqu{
+  height: 100%;
+  width: 50rpx;
+  position: absolute;
+  right: 0;
+  top:0;
+  word-wrap: break-word;
+  text-align: center;
+  background-color: #ffd9e7;
+  font-size: 11pt;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.sale-tag .conpon .lingqu.ed{
+  background-color: #dddee1;
+  color: #fff;
+}
+
+.sale-tag .discount {
+  position: relative;
+  flex: 0 0 250rpx;
+  height: 250rpx;
+  margin-top: 10rpx;
+  padding: 20rpx 0 0 20rpx;
+  box-sizing: border-box;
+}
+
+.sale-tag image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -99999;
+}
+
+.caption {
+  padding: 20rpx 0;
+  text-align: center;
+  font-size: 12pt;
+}
+.service-policy{
+    width: 750rpx;
+    height: 73rpx;
+    background: #f4f4f4;
+    padding: 0 31.25rpx;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing:border-box; 
+}
+
+.service-policy .item{
+    background: url(http://nos.netease.com/mailpub/hxm/yanxuan-wap/p/20150730/style/img/icon-normal/servicePolicyRed-518d32d74b.png) 0 center no-repeat;
+    background-size: 10rpx;
+    padding-left: 15rpx;
+    display: flex;
+    align-items: center;
+    font-size: 25rpx;
+    color: #666;
+}

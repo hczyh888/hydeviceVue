@@ -1,0 +1,17 @@
+
+.enter {
+  position: absolute;
+  bottom: 220rpx;
+}
+.enter navigator{
+  background-color: transparent;
+  padding: 0 120rpx;
+  font-size:11pt;
+  line-height:40px;
+  border: 1rpx solid #F3F3F3;
+  border-radius: 10rpx
+}
+.container{
+  background-color:#F5CECE; 
+  background-size:100% auto; 
+}

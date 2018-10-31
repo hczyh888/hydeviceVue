@@ -1,0 +1,63 @@
+<!--pages/shop/to-pay/index.wxml-->
+<view class='container'>
+  <view class='address-item arrow-right' bindtap='chooseAddress'>
+    <view class="img">
+      <image src='/images/address.png'></image>
+    </view>
+    <view class='address'>
+      <view class="" hidden="{{order.address==null}}">{{order.address.provinceName}} {{order.address.cityName}} {{order.address.countyName}}</view>
+      <view class="" hidden="{{order.address==null}}"> {{order.address.detailInfo}}</view>
+      <view class="" hidden="{{order.address==null}}">收件人：{{order.address.userName}} {{order.address.telNumber}}</view>
+      <view class="" hidden="{{order.address!=null}}">请选择收货地址</view>
+    </view>
+  </view>
+
+  <view class='goods'>
+    <view wx:for="{{order.orderProducts}}" class="flex-wrap goods-list">
+      <view class="flex-item img">
+        <image src='{{item.product_img_temp}}'></image>
+      </view>
+      <view class="flex-item info">
+        <view class="name">{{item.name}}</view>
+        <view class="specificationsStr">{{item.specification_value}}</view>
+        <view class='third-line'>
+          <view class="price">￥{{item.price}}</view>
+          <view class="count">
+            ×{{item.quantity}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="info-item totalPrice">
+    <view class='title'>商品总价</view>
+    <view class='value '>￥{{order.totalPrice}}</view>
+  </view>
+  <view class="info-item totalPrice" wx:if="{{order.coupon_name!=null}}">
+    <view class='title'>{{order.coupon_name}}</view>
+    <view class='value '>-￥{{order.coupon_money}}</view>
+  </view>
+  <view class="info-item" wx:for="{{order.youhuis}}">
+    <view class='title'>{{item.youhuiname}}</view>
+    <view class='value '>-￥{{item.youhuimoney}}</view>
+  </view>
+  <view class="info-item">
+    <view class='title'>运费</view>
+    <view class='value '>+￥{{order.postFee}}</view>
+  </view>
+
+  <view class='info-item remark'>
+    <view class='title'>备注</view>
+    <view class='value'>
+      <input placeholder='选填：60字以内' bindinput='bindRemarkInput' value='{{order.remark}}' maxlength="60"></input>
+    </view>
+  </view>
+  <view class="flex-wrap toolbar">
+    <view class="flex-item total">
+      <text>合计</text>
+      <text class="totalPrice">￥{{order.payFee}}</text>
+    </view>
+    <view class="flex-item balance" bindtap='createOrder'>付款</view>
+  </view>
+</view>

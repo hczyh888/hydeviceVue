@@ -1,0 +1,130 @@
+/* pages/shop/cart/index.wxss */
+.container{
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+}
+.cart-empty{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.cart-icon{
+display: flex;
+width: 100%;
+flex-direction: column;
+align-items: center;
+}
+.cart-icon image{
+  width: 250rpx;
+}
+.cart-icon view{
+  margin-top: 15rpx;
+text-align: center;
+font-size: 12pt;
+}
+.goods{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f8f8f9;
+  overflow-y: auto;
+  padding-bottom:70rpx; 
+}
+.goods .goods-list{
+  padding:30rpx 15rpx;
+  box-sizing: border-box;
+  height: 230rpx;
+  align-items: center;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+.goods .goods-list .checkbox{
+ flex: 0 0 80rpx;
+}
+.goods .goods-list .checkbox image{
+width: 50rpx;
+height: 50rpx;
+}
+
+.goods .goods-list .img{
+ flex: 0 0 180rpx;
+}
+.goods .goods-list .img image{
+  height: 150rpx;
+  width: 150rpx;
+}
+.goods .goods-list .name{
+    overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.goods .goods-list .price{
+font-weight: 500;
+flex: 1;
+}
+.goods .goods-list .specificationsStr{
+  color: #EB77A8;
+}
+.goods .third-line{
+  display:flex;
+  flex-direction:row; 
+}
+.goods .count{
+  padding: 10rpx 10rpx;
+  flex: 1;
+  text-align: right;
+}
+.toolbar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 80rpx;
+  background-color: #fff;
+  width: 100%;
+  align-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.toolbar .balance{
+background-color: #EB77A8;
+flex: 0 0 150rpx;
+color: #fff;
+ line-height: 80rpx;
+}
+.toolbar .total{
+color: #000;
+ line-height: 80rpx;
+ padding: 0 10rpx;
+}
+.toolbar .selectAll{
+flex: 0 0 150rpx;
+color: #bbbec4;
+font-size: 9pt;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.toolbar .selectAll view{
+color: #bbbec4;
+}
+.toolbar .selectAll image{
+flex: 0 0 150rpx;
+color: #bbbec4;
+font-size: 9pt;
+width: 50rpx;
+height: 50rpx;
+}
+.toolbar .total{
+text-align: right;
+color: #000;
+}
+.toolbar .totalPrice{
+color: #EB77A8;
+margin-right: 10rpx;
+}
+.toolbar .yunfeitag{
+color: #bbbec4;
+font-size: 9pt;
+}

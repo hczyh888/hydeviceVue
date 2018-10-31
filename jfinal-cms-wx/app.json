@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/shop/index/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/shop/detail/index",
+    "pages/shop/category/index",
+    "pages/shop/mine/index",
+    "pages/shop/cart/index",
+    "pages/shop/order-confirm/index",
+    "pages/shop/pay/index",
+    "pages/shop/order/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微信小程序商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bbbec4",
+    "selectedColor": "#EB77A8",
+    "list": [
+      {
+        "pagePath": "pages/shop/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shop/category/index",
+        "iconPath": "images/category.png",
+        "selectedIconPath": "images/category1.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/shop/cart/index",
+        "iconPath": "images/cart.png",
+        "selectedIconPath": "images/cart1.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/shop/mine/index",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine1.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

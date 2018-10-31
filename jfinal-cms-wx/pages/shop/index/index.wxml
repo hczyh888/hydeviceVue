@@ -1,0 +1,64 @@
+<!--pages/shop/index/index.wxml-->
+<view>
+  <swiper class="ad-list" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{adList}}">
+      <swiper-item>
+        <image mode="widthFix" src="{{item.thumbnail_temp}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="service-policy">
+      <view class="item">30天无忧退货</view>
+      <view class="item">48小时快速退款</view>
+      <view class="item">满88元免邮费</view>
+    </view>
+<view class='bg-line'></view>
+<view class="caption">
+独乐乐，不如众乐乐
+</view>
+<view class="flex-wrap sale-tag">
+<view class="flex-item sale-count">
+<image src='/images/bg1.jpg'></image>
+<navigator url="" hover-class='none'>人气推荐</navigator>
+</view>
+<view class="flex-item new">
+<image src='/images/bg2.jpg'></image>
+<navigator url=""  hover-class='none'>新品首发</navigator>
+</view>
+<view class="flex-item conpon" wx:if="{{couponList.length>0}}">
+<swiper autoplay="true" interval="3000">
+<swiper-item wx:for="{{couponList}}">
+<image src='/images/bg3.jpg'></image>
+<view class='money'>￥{{item.money}}</view>
+<view class='lastSpendMoney'>满{{item.leastSpendMoney}}使用</view>
+<view class='period'>领取后{{item.period}}天有效</view>
+<view class='lingqu' wx:if="{{item.user_coupon_id==null}}" bindtap='lingqu' data-id="{{item.id}}">领取</view>
+<view class='lingqu ed' wx:if="{{item.user_coupon_id!=null}}" bindtap='lingqu' data-id="{{item.id}}">已领取</view>
+</swiper-item>
+</swiper>
+</view>
+<view class="flex-item discount">
+<image src='/images/bg4.jpg'></image>
+<navigator url=""  hover-class='none'>今日折扣</navigator>
+</view>
+</view>
+<view class="caption">
+特价商品
+</view>
+  <view class=" flex-wrap product">
+    <block wx:for="{{productPage.list}}">
+      <navigator url='../detail/index?id={{item.id}}' class="flex-item product-list">
+        <view class='img' style="background-image:url({{item.thumbnail_temp}})"></view>
+        <view class="title">
+          {{item.name}}
+        </view>
+        <view class="extra">
+          <view class="tag">促销价</view>
+          <view class="price">￥{{item.price}}</view>
+          <view class="marketprice" wx:if="{{item.marketPrice!=null}}">￥{{item.marketPrice}}</view>
+        </view>
+        <view class="tag-label">618促销</view>
+      </navigator>
+    </block>
+  </view>
+</view>

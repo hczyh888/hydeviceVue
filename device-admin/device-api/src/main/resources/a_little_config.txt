@@ -1,0 +1,5 @@
+jdbcUrl = jdbc:mysql://dev.fsua.com/jfinal_crm?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+user = root
+password =FSUA$4fsua
+devMode = true
+FILE_UPLOAD_PATH =/home/upload/
